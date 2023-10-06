@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="control.ReportsController">
+   <children>
+      <AnchorPane layoutX="12.0" layoutY="11.0" maxWidth="462.0" minWidth="300.0" prefHeight="278.0" prefWidth="461.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label layoutX="14.0" layoutY="14.0" text="Number of Appointments by Type and Month">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="MonthsCombo" layoutX="150.0" layoutY="77.0" prefWidth="150.0" />
+            <ComboBox fx:id="TypeCombo" layoutX="150.0" layoutY="121.0" prefWidth="150.0" />
+            <Label layoutX="98.0" layoutY="77.0" text="Month" />
+            <Label layoutX="98.0" layoutY="125.0" text="Type" />
+            <Label layoutX="161.0" layoutY="169.0" text="Number of Appointments:" />
+            <Label fx:id="NumberResult" layoutX="312.0" layoutY="168.0" prefHeight="18.0" prefWidth="52.0" />
+            <Button layoutX="312.0" layoutY="121.0" mnemonicParsing="false" onAction="#Search" text="Search" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="12.0" layoutY="300.0" prefHeight="250.0" prefWidth="926.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="Contact Schedule">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <ComboBox fx:id="ContactCombo" layoutX="235.0" layoutY="10.0" prefWidth="150.0" />
+            <TableView fx:id="AppointmentsTable" layoutX="22.0" layoutY="49.0" prefHeight="176.0" prefWidth="880.0">
+              <columns>
+                <TableColumn fx:id="AppointmentId" maxWidth="125.0" prefWidth="125.0" text="Appointment ID" />
+                <TableColumn fx:id="Title" maxWidth="125.0" prefWidth="125.0" text="Title" />
+                  <TableColumn fx:id="Type" maxWidth="125.0" prefWidth="125.0" text="Type" />
+                  <TableColumn fx:id="Description" maxWidth="125.0" prefWidth="125.0" text="Description" />
+                  <TableColumn fx:id="StartDateTime" maxWidth="125.0" prefWidth="125.0" text="Start Date and Time" />
+                  <TableColumn fx:id="EndDateTime" maxWidth="125.0" prefWidth="125.0" text="End Date and Time" />
+                  <TableColumn fx:id="CustomerId" maxWidth="125.60003662109375" prefWidth="125.60003662109375" text="Customer ID" />
+              </columns>
+            </TableView>
+            <Label layoutX="180.0" layoutY="14.0" text="Contact:" />
+         </children>
+      </AnchorPane>
+      <Button layoutX="887.0" layoutY="560.0" mnemonicParsing="false" onAction="#cancel" text="Cancel" />
+      <AnchorPane layoutX="484.0" layoutY="11.0" maxWidth="454.0" minWidth="300.0" prefHeight="278.0" prefWidth="454.0" style="-fx-background-color: lightgrey;">
+         <children>
+            <Label layoutX="21.0" layoutY="14.0" text="Customers of the Month">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Text layoutX="21.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers with the most appointment hours:" />
+            <GridPane layoutX="156.0" layoutY="107.0" prefHeight="91.0" prefWidth="158.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="95.20001220703125" minWidth="10.0" prefWidth="71.2" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="87.2" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label text="1st Place:" />
+                  <Label text="2nd Place:" GridPane.rowIndex="1" />
+                  <Label text="3rd Place:" GridPane.rowIndex="2" />
+                  <Label fx:id="FirstPlaceCustomer" GridPane.columnIndex="1" />
+                  <Label fx:id="SecondPlaceCustomer" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label fx:id="ThirdPlaceCustomer" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

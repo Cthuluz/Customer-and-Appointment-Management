@@ -1,0 +1,38 @@
+User dsaf failed login attempt on 2023-07-10 at 10:18:25.891476500
+.
+User admin successfully logged in on 2023-07-10 at 10:18:34.901007900
+.
+User test successfully logged in on 2023-07-10 at 10:50.
+
+User test successfully logged in on 2023-07-10 at 10:51.
+
+User test successfully logged in on 2023-07-10 at 10:51:35.
+
+User test successfully logged in on 2023-07-11 at 11:05:48.
+
+User test successfully logged in on 2023-07-11 at 11:06:50.
+
+User test successfully logged in on 2023-07-11 at 11:11:36.
+
+User test successfully logged in on 2023-07-11 at 11:12:21.
+
+User test successfully logged in on 2023-07-11 at 14:42:01.
+
+User test successfully logged in on 2023-07-11 at 15:30:39.
+
+User test successfully logged in on 2023-07-12 at 09:49:25.
+
+User test successfully logged in on 2023-07-14 at 09:48:40.
+
+User admin failed login attempt on 2023-10-06 at 15:20:25.
+
+User admin failed login attempt on 2023-10-06 at 15:22:26.
+
+User user failed login attempt on 2023-10-06 at 15:22:33.
+
+User useradmin failed login attempt on 2023-10-06 at 15:22:37.
+
+User test failed login attempt on 2023-10-06 at 15:23:46.
+
+User test successfully logged in on 2023-10-06 at 15:23:59.
+
