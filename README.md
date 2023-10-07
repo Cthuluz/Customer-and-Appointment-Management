@@ -1,4 +1,4 @@
-Customer and Appointments Management Tool
+Java Customer and Appointments Management Tool
 
 This management tool is for industrial organization of customers and booked appointment information. There are three different types of information that can be viewed and modified, which include the appointments page, the customers page and the reports page. Appointments and customers can both be added, modified and deleted through the GUI, which updates an SQL database. All GUI components were created using Scene Builder.
 
